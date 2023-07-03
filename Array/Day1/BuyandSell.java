@@ -1,4 +1,4 @@
-package Array;
+package Array.Day1;
 
 class BuyandSell{
      public static void main(String[] args) {
