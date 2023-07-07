@@ -1,5 +1,7 @@
 package Array.Day4;
 
+import java.util.HashSet;
+
 public class Union {
     public static void main(String[] args) {
         int num[]={10,20,30};
@@ -8,16 +10,25 @@ public class Union {
     }
 
     static void union(int num[],int arr[],int n, int m){
-        int count=0;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(num[i]!=arr[j]){
+        // int count=0;
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<m;j++){
+        //         if(num[i]!=arr[j]){
                     
-                }
-                 count++;
-            }
+        //         }
+                
+        //     }
            
+        // }
+        // System.out.println(count);
+
+        HashSet<Integer> has=new HashSet<>();
+        for(int i=0;i<n;i++){
+            has.add(num[i]);
         }
-        System.out.println(count);
+        for(int i=0;i<m;i++){
+            has.add(arr[i]);
+        }
+        System.out.println(has.size());
     }
 }
