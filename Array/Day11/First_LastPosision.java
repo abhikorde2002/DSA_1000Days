@@ -9,14 +9,16 @@ public class First_LastPosision {
     }
     
 
-    static int[] first_Last(int arr[],int target){
+    static int first_Last(int arr[],int target){
         int ans[]={-1,-1};
+        int sum=0;
         int start =search(arr, target, true);
         int end=search(arr, target, false);
         ans[0]=start;
         ans[1]=end;
-         System.out.println(Arrays.toString(ans));
-        return ans;
+        sum= ans[1]-ans[0]+1;
+        System.out.println(sum);
+        return sum;
     }
 
     static int search(int arr[],int target,boolean firstoccurance){
@@ -39,6 +41,7 @@ public class First_LastPosision {
                 ans=mid;
                 if(firstoccurance){
                    end=mid-1;
+                   
                 }
                 else{
                     start= mid+1;

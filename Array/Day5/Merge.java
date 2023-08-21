@@ -6,7 +6,8 @@ public class Merge {
     public static void main(String[] args) {
         int arr[]={ 1, 5, 9, 10, 15, 20 };
         int num[]={ 2, 3, 8, 13 };
-        merge(arr,num);
+       // merge(arr,num);
+        merges(arr, num);
     }
 
     static void merge(int arr[],int num[]){
@@ -23,6 +24,30 @@ public class Merge {
             j++;
             k--;
          }
+        }
+        Arrays.sort(arr);
+        Arrays.sort(num);
+         System.out.println(Arrays.toString(arr));
+         System.out.println(Arrays.toString(num));
+    }
+
+
+    static void merges(int arr[],int num[]){
+        int n=arr.length-1;
+    
+        int i=0;
+        int j=0;
+        while(i<=n && j<=num.length-1){
+            if(arr[i]<num[j]){
+                i++;
+            }
+            else{
+                int tem=arr[n];
+                arr[n]=num[j];
+                num[j]=tem;
+                j++;
+                n--;
+            }
         }
         Arrays.sort(arr);
         Arrays.sort(num);
