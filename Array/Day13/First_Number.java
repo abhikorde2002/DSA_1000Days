@@ -10,7 +10,7 @@ public class First_Number {
         sum=end-start+1;
         System.out.println(sum);
     }
-    static int bineary(int target,int arr[],boolean firstoccurance){
+    static int bineary(int target,int arr[],boolean firstoccurance){ 
         int start =0;
         int ans=0;
         int end=arr.length-1;
