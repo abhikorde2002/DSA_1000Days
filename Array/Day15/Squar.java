@@ -4,7 +4,7 @@ public class Squar {
     public static void main(String[] args) {
     //     int x=8;
     //        
-    System.out.println(bineary(8));
+    System.out.println(bineary(15));
     }
     static void square(int x){
          double arr=(double)x;
