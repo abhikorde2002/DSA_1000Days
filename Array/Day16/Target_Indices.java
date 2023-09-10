@@ -10,6 +10,7 @@ public class Target_Indices {
     public static void main(String[] args) {
         int arr[]={1,2,5,2,3};
         System.out.println(search(arr, 2));
+        // System.out.println(findDuplicate(arr));
     }
 
      public List<Integer> targetIndices(int[] nums, int target) {
@@ -31,13 +32,14 @@ public class Target_Indices {
          List<Integer> sh=new ArrayList<>();
          for(int i:st){
          sh.add(i);
+         
          }
         return sh;
     }
 
     static int bineary(int arr[],int target,boolean firstoccurance){
         int start=0;
-        int end=arr.length;
+        int end=arr.length-1;
         int ans=0;
         while(start<=end){
             int mid=start + (end-start)/2;
@@ -60,4 +62,6 @@ public class Target_Indices {
         }
         return ans;
     }
+
+   
 }

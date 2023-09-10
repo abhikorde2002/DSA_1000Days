@@ -3,7 +3,7 @@ package Array.Day10;
 public class Order_agnostic {
     public static void main(String[] args) {
         int arr[]={1,2,4,7,9,11,14,15,20,30};
-        System.out.println(order(arr, 15));
+        System.out.println(order(arr, 16));
     }
 
     static int order(int arr[],int key){

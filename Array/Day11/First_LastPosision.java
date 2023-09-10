@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class First_LastPosision {
     public static void main(String[] args) {
-        int num[]={5,7,8,8,9};
-      first_Last(num, 7);
+        int num[]={-23,40,45,1,2,27,-89,100,100,100,100,100};
+      first_Last(num, 100);
     }
     
 
@@ -26,7 +26,7 @@ public class First_LastPosision {
         int start=0;
         int ans=-1;
 
-        int end=arr.length;
+        int end=arr.length-1;
 
         while (start<=end){
             int mid=start +(end-start)/2;

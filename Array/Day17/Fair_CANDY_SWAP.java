@@ -1,0 +1,34 @@
+package Array.Day17;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Fair_CANDY_SWAP {
+    public static void main(String[] args) {
+       int arr[]={1,2};
+       int num[]={2,3};
+       
+       System.out.println(Arrays.toString(candySwap(arr, num)));
+    }
+    
+    static int[] candySwap(int arr[],int num[]){
+      int rohitTotal=0;
+      int samTotal=0;
+      for(int candie:arr){
+        rohitTotal+=candie;
+      }
+      for(int candies:num){
+        samTotal+=candies;
+      }
+      int n=arr.length,m=num.length;
+      for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            if((rohitTotal-arr[i]+num[j])==(samTotal-num[j]+arr[i])){
+                return new int[]{arr[i],num[j]};
+            }
+        }
+      }
+      return new int[0];
+    }
+}
