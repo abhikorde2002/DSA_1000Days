@@ -6,7 +6,7 @@ public class Pairs_Bineary {
     public static void main(String[] args) {
         int arr[]={20,40,60,80,90,120,240};
         System.out.println(Arrays.toString(pairs(arr, 210)));
-         System.out.println(Arrays.toString(Two_pointer(arr, 210)));
+        //  System.out.println(Arrays.toString(Two_pointer(arr, 210)));
     }
     static int[] pairs(int arr[],int target){
         int start=0;

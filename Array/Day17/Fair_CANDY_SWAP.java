@@ -10,6 +10,7 @@ public class Fair_CANDY_SWAP {
        int num[]={2,3};
        
        System.out.println(Arrays.toString(candySwap(arr, num)));
+       System.out.println(Arrays.toString(Tryles(arr, num)));
     }
     
     static int[] candySwap(int arr[],int num[]){
@@ -28,6 +29,34 @@ public class Fair_CANDY_SWAP {
                 return new int[]{arr[i],num[j]};
             }
         }
+      }
+      return new int[0];
+    }
+
+    static int[] Tryles(int arr[],int num[]){
+      int total=0;
+      int sum=0;
+      for(int a:arr){
+        total+=a;
+      }
+      for(int j:num){
+         sum+=j;
+      }
+      int start=0;
+      int end=0;
+      int i=0;
+      int k=0;
+      while(i<arr.length && k<num.length){
+        start=i;
+        end=k;
+        if((total -arr[start]+num[end])== (sum-num[end]+arr[start])){
+          return new int[]{arr[start],num[end]};
+        }
+        else if(k>num.length) {
+             i++;
+        }
+          k++;
+        
       }
       return new int[0];
     }
