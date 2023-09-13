@@ -1,4 +1,4 @@
-package Array.Day17;
+package Array.Day_18;
 
 public class Peak_Element {
     public static void main(String[] args) {
