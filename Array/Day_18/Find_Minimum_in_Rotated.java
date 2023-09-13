@@ -1,12 +1,10 @@
 package Array.Day_18;
-
-public class Peak_Element {
+//Find Minimum in Rotated Sorted Array
+public class Find_Minimum_in_Rotated  {
     public static void main(String[] args) {
     //  int nums[] = {4,5,1,2,3};
     int nums[]={4,5,8,9,2,3};
-     
      System.out.println(peak(nums));
-     
     }
     static int peak(int arr[]){
               int start=0;
