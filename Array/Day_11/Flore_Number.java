@@ -16,6 +16,6 @@ public class Flore_Number {
             else end = mid-1;
 
         }
-        return end;
+        return arr[end];
     }
 }
