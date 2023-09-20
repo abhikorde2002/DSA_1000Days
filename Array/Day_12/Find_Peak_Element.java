@@ -14,6 +14,6 @@ public class Find_Peak_Element {
             if(arr[mid]>arr[mid+1])end=mid;
             else start=mid+1;
         }
-        return start;
+        return arr[start];
     }
 }

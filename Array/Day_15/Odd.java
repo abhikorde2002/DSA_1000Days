@@ -21,9 +21,6 @@ public class Odd {
             int sum=end -start+1;
              System.out.println( a+" "+sum);
         }
-     
-      
-    
     }
     static int bineary(int target,int arr[],boolean firstoccurance){
         int start =0;

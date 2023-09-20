@@ -8,6 +8,7 @@ public class DIff_K {
     public static void main(String[] args) {
         int arr[]={1, 5, 2, 2, 2, 5, 5, 4};
         result(arr, 3);
+        binearys(arr, 3);
     }
     static void result(int arr[],int k){
        int i=0;
@@ -32,5 +33,17 @@ public class DIff_K {
     // }
     //     i++;
     //    }
+    }
+    static void binearys(int arr[],int k){
+     
+        for(int i=0;i<arr.length;i++){
+
+            while(i<arr.length-1 && arr[i]==arr[i+1]){
+                i++;
+            }
+            if(Arrays.binarySearch(arr,arr[i]-k)>=0){
+                System.out.println(arr[i]+", "+(arr[i]-k));
+            }
+        }
     }
 }

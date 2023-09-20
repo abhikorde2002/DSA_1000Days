@@ -19,7 +19,7 @@ public class Maxi_Count {
             System.out.println(i);
         }
         tar=tar-i;
-        System.out.println(tar);
+        
         System.out.println(maximumCount(arr));
      // System.out.println(bineary(arr, false));;
          
@@ -73,8 +73,6 @@ public class Maxi_Count {
         pos -- ;
         i++;
     }
-    
-  
     return start > pos? start : pos;
     }    
 }

@@ -2,11 +2,11 @@ package Array.Day_14;
 
 public class Last_Occurance {
     public static void main(String[] args) {
-        int num[]={1,1,1,1,0,0,0};
+        int num[]={1,1,1,1,1,0,0,0};
         int start=bineary(1, num, true);
         int end=bineary(1, num, false);
         int sum=end-start+1;
-        System.out.println(sum);
+        System.out.println(sum-1);
     }
 
     static int bineary(int target,int arr[],boolean firstoccurance){
