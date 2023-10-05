@@ -5,6 +5,7 @@ public class Sum_square {
         long  c=5;
         System.out.println((long)Math.sqrt(c));
         System.out.println(binary(c));
+    // System.out.println(Math.(Math.sqrt(c)));
 
     }
     
@@ -12,7 +13,7 @@ public class Sum_square {
    static boolean binary(long c){
     for(long i=0;i*i<=c;i++){
         long a=c-i*i;
-        System.out.println(a);
+        // System.out.println(a);
         boolean isSquare= search(0,a,a);
         if(isSquare)return true;
      }
