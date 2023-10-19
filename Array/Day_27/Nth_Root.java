@@ -52,8 +52,7 @@ public class Nth_Root {
             }
             else{
                 end=mid-1;
-            }
-
+            }  
         }
         return -1;
     }
@@ -64,7 +63,6 @@ public class Nth_Root {
             if(ans>b){
                 return 2;
             }
-
         }
         if(ans==b){
             return 1;
