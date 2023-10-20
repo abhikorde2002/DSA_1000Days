@@ -12,6 +12,7 @@ public class Cyclic {
        int i=0;
        while(i<arr.length){
         int index=arr[i]-1;
+        System.out.println(index);
         if(arr[i]!=arr[index]){
             int tem=arr[i];
             arr[i]=arr[index];
