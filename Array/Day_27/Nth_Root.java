@@ -57,7 +57,7 @@ public class Nth_Root {
         return -1;
     }
     static int loops(int mid,int a,int b){
-        int ans=1;
+        long ans=1;
         for(int i=1;i<=a;i++){
             ans=ans*mid;
             if(ans>b){

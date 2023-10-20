@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Book_Aloc_Bin {
+public class Painter_Partition {
     public static void main(String[] args) {
          ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(10,20,30,40));
          int n = 5;
