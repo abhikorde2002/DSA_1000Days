@@ -5,6 +5,7 @@ public class Rotation {
         String str="CDAB";
         String s="ABCD";
         System.out.println(isSub(s, str));
+        System.out.println(isRotation(s, str));
     //    a=s.substring(str.charAt(0),s.length()-1);
     //    System.out.println(a);
     }
@@ -23,14 +24,18 @@ public class Rotation {
             sr+=s.charAt(i);
         }
         int count=0;
-
         for(int i=0;i<str.length();i++){
             if(sr.charAt(i)==str.charAt(i)){
                 count++;
             }  
         }
-        System.out.println(count);
-       
        return count>2 ? "String is revers": "String is not rivers";
+    }
+    static boolean isRotation(String s, String str){
+        if(s.length()!=str.length()){
+            return false;
+        }
+        String sr=s+s;
+        return sr.contains(str);
     }
 }
