@@ -2,8 +2,8 @@ package Strings.Day_35;
 
 public class Longest_Palindrom {
     public static void main(String[] args) {
-        String str="abc";
-        String s="axxxb";
+        String str="babad";
+        String s="babad";
         System.out.println(Longest(str));
         System.out.println(longestPalin(s));
     }
