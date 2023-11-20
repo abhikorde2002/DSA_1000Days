@@ -5,9 +5,7 @@ public class Tree_Equal {
         String s="abc",str="abb",j="ab";
         System.out.println(Equal(s, str, j));
     }
-
     static int Equal(String s,String str,String j){
-       
         int a=0;
         for(int i=0;i<s.length() && i<str.length() && i<j.length();i++){
             if(s.charAt(i)== str.charAt(i) && str.charAt(i)==j.charAt(i)){
