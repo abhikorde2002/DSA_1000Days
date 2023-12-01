@@ -7,8 +7,20 @@ public class Revers {
        revers("Abhi"); 
        char ch[]={'h','e','l','l','o'};
        Rev(ch);
+       Cyclic("Abhi");
     }
 
+    static void Cyclic(String s){
+         char[] ch=s.toCharArray();
+         String str="";
+        for(int i=0;i<s.length();i++){
+            char tem=ch[i];
+            ch[i]=ch[s.length()-1];
+            ch[s.length()-1]=tem;
+            
+        }
+        System.out.println(Arrays.toString(ch));
+    }
     static void revers(String s){
          String str="";
          char ch;

@@ -4,6 +4,7 @@ public class Tree_Equal {
     public static void main(String[] args) {
         String s="abc",str="abb",j="ab";
         System.out.println(Equal(s, str, j));
+        
     }
     static int Equal(String s,String str,String j){
         int a=0;

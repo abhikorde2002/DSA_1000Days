@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Longest_Rep_Subeq {
     public static void main(String[] args) {
-        String str="axxxxb";
+        String str="axxxb";
         System.out.println(SubSequence(str));
     }
 

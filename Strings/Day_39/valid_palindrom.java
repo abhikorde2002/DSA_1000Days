@@ -52,5 +52,5 @@ public class valid_palindrom {
     
        }
        return true;
-   }
+   } 
 }

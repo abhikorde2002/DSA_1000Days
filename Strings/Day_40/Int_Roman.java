@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Int_Roman {
     public static void main(String[] args) {
-        System.out.println(Roman(3));
+        System.out.println(Roman(20));
     }
 
     static String Roman(int num){
