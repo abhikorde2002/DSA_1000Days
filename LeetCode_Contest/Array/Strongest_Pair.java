@@ -1,4 +1,4 @@
-package Contest.Array;
+package LeetCode_Contest.Array;
 
 public class Strongest_Pair {
     public static void main(String[] args) {

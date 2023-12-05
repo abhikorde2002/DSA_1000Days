@@ -1,4 +1,4 @@
-package Contest.String;
+package LeetCode_Contest.String;
 
 public class Tree_Equal {
     public static void main(String[] args) {

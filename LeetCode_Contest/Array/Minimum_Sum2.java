@@ -1,4 +1,4 @@
-package Contest.Array;
+package LeetCode_Contest.Array;
 
 public class Minimum_Sum2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Contest.String;
+package LeetCode_Contest.String;
 
 public class Separae_Balls {
     public static void main(String[] args) {

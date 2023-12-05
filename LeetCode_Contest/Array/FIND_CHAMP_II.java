@@ -1,4 +1,4 @@
-package Contest.Array;
+package LeetCode_Contest.Array;
 
 public class FIND_CHAMP_II {
     public static void main(String[] args) {
