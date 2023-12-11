@@ -1,4 +1,4 @@
-package Strings.Day45;
+package Strings.Day_45;
 
 public class Remove_OUt_Paran {
     public static void main(String[] args) {
@@ -52,8 +52,7 @@ public class Remove_OUt_Paran {
              else if(s.charAt(i)==')' && cou==1){
                 cou--;
             }
-        }
-        System.out.println(str);
+        } 
         return str;
     }
     static String Par(String s){
