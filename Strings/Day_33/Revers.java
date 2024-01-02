@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Revers {
     public static void main(String[] args) {
-       revers("Abhi"); 
+       revers("20-3+5*2"); 
        char ch[]={'h','e','l','l','o'};
        Rev(ch);
-       Cyclic("Abhi");
+       Cyclic("20-3+5*2");
     }
 
     static void Cyclic(String s){

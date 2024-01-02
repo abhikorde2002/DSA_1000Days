@@ -11,7 +11,7 @@ public class Collection {
           hm.put(1, 11);
            int a=0;
           a= hm.get(3);
-          int b= a.toInteger();
+          // int b= a.toInteger();
         }
 
 }

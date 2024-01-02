@@ -1,8 +1,12 @@
 package Strings.Day_33;
 
+import java.util.Scanner;
+
 public class Palindrom {
     public static void main(String[] args) {
         Pali("abba");
+        Scanner sc= new Scanner(System.in);
+        String str=sc.nextLine();
     }
 
     static void Pali(String s){
