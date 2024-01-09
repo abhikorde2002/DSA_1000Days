@@ -13,21 +13,23 @@ public class Try {
         Try.createdTS = new Try(System.currentTimeMillis());
     }
     public static void main(String[] args) {
-        int count=1;
-        if(count==0){
-System.out.println("Hi");
-        }
-        else{
-            String barcode="Hi";
-            Try s=Try.createdTS;
-            int weightTgt=4;
-            int weightMin=10;
-            int weightMax=50;
-        Try t= new Try(barcode,s,weightTgt,weightMin,weightMax);
-            System.out.println( t.barcode);
-            System.out.println(s);
-        }}
-
+        long max= Integer.MIN_VALUE;
+        System.out.println(max);
+//         int count=1;
+//         if(count==0){
+// System.out.println("Hi");
+//         }
+//         else{
+//             String barcode="Hi";
+//             Try s=Try.createdTS;
+//             int weightTgt=4;
+//             int weightMin=10;
+//             int weightMax=50;
+//         Try t= new Try(barcode,s,weightTgt,weightMin,weightMax);
+//             System.out.println( t.barcode);
+//             System.out.println(s);
+//         }}
+    }
     // public static String getBarcode() {
     //     return barcode;
     // }
