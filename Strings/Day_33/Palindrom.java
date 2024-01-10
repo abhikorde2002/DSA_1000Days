@@ -9,6 +9,7 @@ public class Palindrom {
         String str=sc.nextLine();
     }
 
+    
     static void Pali(String s){
         int a=0;
         for(int i=0;i<s.length()/2;i++){

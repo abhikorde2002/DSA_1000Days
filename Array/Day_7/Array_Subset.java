@@ -9,10 +9,10 @@ public class Array_Subset {
      int  a1[] = {11,1, 7, 13, 21, 3, 7, 3};
       int a2[] = {11, 1, 1, 7};
       int A[]={1 ,4, 45, 6 ,10, 8};
-   System.out.println(  isSubset(a1, a2, 8, 4));
+ //  System.out.println(  isSubset(a1, a2, 8, 4));
      System.out.println(find3Numbers(A, 6, 13));
     }
-    static String isSubset(int a1[],int a2[],int n,int m){
+  //  static String isSubset(int a1[],int a2[],int n,int m){
 //       ArrayList<Integer> arr=new ArrayList<>();
 //     Arrays.sort(a1);
 //      Arrays.sort(a2);
@@ -81,7 +81,7 @@ public class Array_Subset {
     //     in arr1[] */
       
     //   return isFlag;
-   }
+ //  }
 
    public static int find3Numbers(int A[], int n, int X) { 
     
