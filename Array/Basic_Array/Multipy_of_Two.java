@@ -1,4 +1,4 @@
-package Anchal.Basic_Array;
+package Array.Basic_Array;
 
 public class Multipy_of_Two {
     public static void main(String[] args) {

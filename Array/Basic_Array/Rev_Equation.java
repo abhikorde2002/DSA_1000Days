@@ -1,4 +1,4 @@
-package Anchal.Basic_Array;
+package Array.Basic_Array;
 
 public class Rev_Equation {
     public static void main(String[] args) {

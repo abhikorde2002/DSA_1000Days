@@ -1,4 +1,4 @@
-package Anchal.Add_Array;
+package Array.Add_Array;
 
 import java.util.Arrays;
 

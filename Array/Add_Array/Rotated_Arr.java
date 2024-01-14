@@ -1,4 +1,4 @@
-package Anchal.Add_Array;
+package Array.Add_Array;
 
 import java.util.Arrays;
 
@@ -7,6 +7,7 @@ public class Rotated_Arr {
         int arr[]={1,2,3,4,5,6,7};
         int ind=0;
         int k=3;
+       /// int ans=Integer.MIN_VALUE.MIN;
         for(int i=0;i<k;i++){
             rotates(arr, arr.length);
         }

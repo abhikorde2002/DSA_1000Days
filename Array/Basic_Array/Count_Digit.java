@@ -1,4 +1,4 @@
-package Anchal.Basic_Array;
+package Array.Basic_Array;
 
 public class Count_Digit {
     public static void main(String[] args) {
