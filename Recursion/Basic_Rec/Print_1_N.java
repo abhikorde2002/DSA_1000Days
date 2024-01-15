@@ -3,8 +3,10 @@ package Recursion.Basic_Rec;
 public class Print_1_N {
     public static void main(String[] args) {
         //Print(10);
-        printNos(10);
+        printNos(5);
+   
     }
+   
 
     // static void Print(int N){
     //     int a=1;
@@ -18,12 +20,12 @@ public class Print_1_N {
     public static void printNos(int n)
     {
         //Your code here
-        Arr(n+1,1);
+        Arr(n,1);
       
     }
     
     public static void Arr(int n,int i){
-        if(i>=n){
+        if(i>n){
             return;
         }
         System.out.println(i+" ");
