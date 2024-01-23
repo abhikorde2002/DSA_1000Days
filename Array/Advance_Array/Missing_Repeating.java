@@ -6,6 +6,7 @@ public class Missing_Repeating {
     public static void main(String[] args) {
         int ans[]=new int[2];
         int num[]={1,2,3,3};
+        
         ans[0]=missingNumber(num);
         ans[1]=dupli(num);
         System.out.println(Arrays.toString(ans));
