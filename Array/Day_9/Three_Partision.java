@@ -21,7 +21,7 @@ public class Three_Partision {
             // If current element is smaller than
             // range, put it on next available smaller
             // position.
- 
+  
             if (arr[i] < a) {
  
                 int temp = arr[start];

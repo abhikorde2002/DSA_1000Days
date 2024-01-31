@@ -2,7 +2,7 @@ package Recursion.Basic_Rec;
 
 public class Mul_digit {
     public static void main(String[] args) {
-        System.out.println(Mul(55));
+        System.out.println(Mul(115));
     }
 
     static int Mul(int n){

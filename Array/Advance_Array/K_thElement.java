@@ -1,33 +1,42 @@
 package Array.Advance_Array;
 
+// Java code for the above approach
+
 import java.util.Arrays;
+import java.util.Collections;
 
-public class K_thElement {
-    public static void main(String[] args) {
-        int arr1[]={2, 3, 6, 7, 9};
-        int arr[]={1, 4, 8, 10};
-        System.out.println(kthElement(arr1, arr, 5));
-    }
+class K_thElement {
 
-    public static int  kthElement( int arr1[], int arr2[],int k) {
-        int arr[]=new int [arr1.length+arr2.length];
-        int i=0;
-        int ans=0;
-        while (i<arr1.length) {
-            arr[i]=arr1[i];
-            i++;
-            ans=i;
-            System.out.println(arr[i]);
-            System.out.println(arr1[i]);
-        }
-        System.out.println(ans);
-        while (ans<arr2.length) {
-            arr[ans]=arr2[ans];
-            i++;
-        }
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-        return arr[k-1];
+	public static String reverseString(String str)
+	{
 
-    }
+		StringBuilder sb = new StringBuilder(str);
+		sb.reverse();
+		return sb.toString();
+	}
+
+	public long kthElement( int arr[], int num[], int m, int n, int b) {
+		int[] ans=new int[m+n];
+		   int i = 0;  
+		   int j = 0;  
+		   int k = 0;  
+			
+		   // traverse the arr and insert its element in arr3
+		   while(i < m){   
+			ans[k++] = arr[i++];   
+		   }   
+			
+		   // now traverse num and insert in ans
+		   while(j < n){   
+			ans[k++] = num[j++];   
+		   }   
+			
+		   // sort the whole array ans
+		   Arrays.sort(ans); 
+
+		   return ans[b-1];  
+	   
+   }
 }
+
+// This code is contributed by Chhavi
