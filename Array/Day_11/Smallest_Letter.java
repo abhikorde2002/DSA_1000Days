@@ -3,7 +3,7 @@ package Array.Day_11;
 public class Smallest_Letter {
     public static void main(String[] args) {
         char ch[]={'c','f','j'};
-        System.out.println(smallest(ch, 'j'));
+        System.out.println(smallest(ch, 'g'));
     }
 
     static char smallest(char arr[],int target){

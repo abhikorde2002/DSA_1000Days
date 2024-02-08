@@ -7,7 +7,7 @@ public class MINIMUM_SUB {
     public static void main(String[] args) {
         int arr[]={1,4,4};
         System.out.println(minSubArrayLen(5, arr));
-        System.out.println(Sub_array(arr, 4));
+        System.out.println(Sub_array(arr, 5));
     }
 
      public static int minSubArrayLen(int target, int[] nums) {

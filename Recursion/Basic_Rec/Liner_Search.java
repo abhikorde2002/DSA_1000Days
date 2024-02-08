@@ -6,10 +6,10 @@ public class Liner_Search {
     public static void main(String[] args) {
         
         int arr[]={1,2,3,3,5};
-        System.out.println(Search(arr, 0, 5)); 
-        System.out.println(find(arr, 0, 3));  
-        System.out.println(FindLast(arr, 3, 1));
-        System.out.println(FindAll(arr, 0, 3, new ArrayList<>()));
+        // System.out.println(Search(arr, 0, 5)); 
+        // System.out.println(find(arr, 0, 3));  
+        // System.out.println(FindLast(arr, 3, 1));
+        // System.out.println(FindAll(arr, 0, 3, new ArrayList<>()));
         System.out.println(FindAlls(arr, 0, 3));
     }
     static boolean Search(int arr[],int i,int target){

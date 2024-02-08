@@ -1,10 +1,11 @@
 package Array.Day_14;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class Frequence_Num {
     public static void main(String[] args) {
-       int arr[] ={2, 2, 2, 4, 4, 4, 5, 5, 6, 8, 8, 9};
+       int arr[] ={1, 1, 2, 2, 1, 1, 2, 2, 13, 1, 1, 40, 40, 13, 13};
        search(arr); 
     }
 
@@ -23,7 +24,8 @@ public class Frequence_Num {
         // ans[1]=end;
         // int sum=ans[1]-ans[0]+1;
         int sum= end -start +1;
-        System.out.println(a+" "+sum);
+      
+      //  System.out.println(a+" "+sum);
         }
     }
 

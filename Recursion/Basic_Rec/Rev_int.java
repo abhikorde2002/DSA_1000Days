@@ -9,11 +9,12 @@ public class Rev_int {
 
     static void Revers(int n){
         if(n==0){
+            System.out.println();
             return;
         }
     //     int rev=0;
     //   rev = rev+ n %10;
-      System.out.print(n%10 +" ");
+      System.out.print(n%10 );
        Revers(n/10);
     }
     static int Reminder(int n ,int rev){

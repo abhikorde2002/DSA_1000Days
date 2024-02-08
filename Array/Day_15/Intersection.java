@@ -10,7 +10,7 @@ public class Intersection {
     public static void main(String[] args) {
         int arr[]={1,2,2,1};
         int num[]={2,2};
-        System.out.println(intersection(num, num));
+        System.out.println(intersection(arr, num));
         intersections(num, num);
         System.out.println(Arrays.toString(intersect(num, num)));
     }

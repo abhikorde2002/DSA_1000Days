@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Find_Peak_Element {
     public static void main(String[] args) {
-        int nums []= {1,4,2,3,4,1};
+        int nums []= {1,2,3,1};
        System.out.println(findPeakElement(nums));
        
     }
@@ -17,6 +17,6 @@ public class Find_Peak_Element {
             if(arr[mid]>arr[mid+1])end=mid;
             else start=mid+1;
         }
-        return arr[start];
+        return arr[end];
     }
 }
