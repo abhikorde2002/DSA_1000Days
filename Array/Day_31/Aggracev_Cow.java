@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class Aggracev_Cow {
     public static void main(String[] args) {
         int arr[]={0,3,4,7,10,9};
-         System.out.println(Cows(arr, 4));
-         System.out.println(aggressiveCows(arr, 4));
-         System.out.println(posibls(arr, 4));
+          System.out.println(Cows(arr, 4));
+        //  System.out.println(aggressiveCows(arr, 4));
+        //  System.out.println(posibls(arr, 4));
     }
-
 
     //Simple Approach with O(N* Log N) time complexity
     static int Cows(int arr[],int count){

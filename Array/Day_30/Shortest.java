@@ -7,7 +7,7 @@ public class Shortest {
     }
     public static String shortestBeautifulSubstring(String s, int k) {
         String str="";
-       
+        int start=0;
         for(int i=0;i<s.length();i++){
              int count=0;
             for(int j=i;j<=s.length()-1;j++){
@@ -17,7 +17,7 @@ public class Shortest {
                 }
             }
             if(count==k){
-                return str;
+               return str;
             }
             else{
                 str="";

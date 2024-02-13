@@ -6,9 +6,10 @@ import java.util.HashSet;
 public class Celling {
     public static void main(String[] args) {
          int arr[]={1,2,4,7,9,11,14,15,20,30};
-         System.out.println(celling(arr, 16));
-        int num[]={1,2,3,2,5};
-        System.out.println(missingInteger(num));
+        //  System.out.println(celling(arr, 16));
+        // int num[]={1,2,3,2,5};
+        // System.out.println(missingInteger(num));
+        System.out.println(celling(arr, 31));
        
     }
     public static int missingInteger(int[] arr) {
