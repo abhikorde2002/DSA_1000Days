@@ -6,14 +6,53 @@ import java.util.Collections;
 
 public class Book_Alocation {
     public static void main(String[] args) {
-        int arr[]={15, 10, 19, 10, 5 ,18, 7};
-        System.out.println(findPages(arr,7, 5));
-         ArrayList<Integer> arrs = new ArrayList<>(Arrays.asList(15, 10, 19, 10, 5 ,18, 7));
-         int n = 5;
-         int m = 4;
-         int ans= find(arrs, n, m);
-         System.out.println("The ans is: " + ans);
+        int arr[]={25, 46, 28, 49, 24};
+        // System.out.println(findPages(arr,5, 4));
+        //  ArrayList<Integer> arrs = new ArrayList<>(Arrays.asList(15, 10, 19, 10, 5 ,18, 7));
+        //  int n = 5;
+        //  int m = 4;
+        //  int ans= find(arrs, n, m);
+        //  System.out.println("The ans is: " + ans);
+        System.out.println(pages(arr, 4));
         }
+         
+        static int pages(int arr[],int s){
+            int sum=0,max=Integer.MIN_VALUE;
+            for(int i=0;i<arr.length;i++){
+                sum+=arr[i];
+                max=Math.max(max, arr[i]);
+            }
+            for(int i=max;i<=sum;i++){
+                if(tryle(arr, i)==s){
+                    return i;
+                }
+            }
+            return max;
+        }
+        static int tryle(int arr[],int page){
+             int student=1;
+             int total=0;
+             for(int i=0;i<arr.length;i++){
+               if(total+arr[i]<=page){
+                total+=arr[i];
+               }
+               else{
+                total=arr[i];
+                student++;
+               }
+            // total+=arr[i];
+            //  if(total>page){
+            //     student++;
+            //     total=arr[i];
+            //  }
+            //  else{
+            //     i++;
+            //  }
+             }
+             return student;
+        }
+
+
 
         public static int findPages(int[]arr,int N,int student)
         {
