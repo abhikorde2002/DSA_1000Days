@@ -16,6 +16,7 @@ public class Add_One {
         a.inserFirst(3);
         a.inserFirst(2);
         a.inserFirst(1);
+        a.display();
         
        
         

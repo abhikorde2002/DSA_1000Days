@@ -2,8 +2,8 @@ package Array.Day_27;
 
 public class Nth_Root {
     public static void main(String[] args) {
-        int a=3;
-        int b=27;
+        int a=1;
+        int b=9;
         //  System.out.println((int)Math.pow(a,3 ));
         System.out.println(Search(a, b));
         System.out.println(binary(a, b));

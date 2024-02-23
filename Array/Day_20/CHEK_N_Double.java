@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CHEK_N_Double {
     public static void main(String[] args) {
-        int arr[]={0,0};
+        int arr[]={10, 2 ,5 ,3};
         System.out.println(exists(arr));
         System.out.println(bineary(arr));
     }

@@ -9,9 +9,9 @@ public class Bubble_Sort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void search(int arr[],int n,int c){
+    static int[] search(int arr[],int n,int c){
         if(n==0){
-            return;
+            return arr;
         }
        if(c<n){
         if(arr[c]>arr[c+1]){
@@ -19,10 +19,10 @@ public class Bubble_Sort {
              arr[c]=arr[c+1];
             arr[c+1]=tem;
         }
-        search(arr,n, c+1);
+        return search(arr,n, c+1);
        }
        else{
-        search(arr,n-1, 0);
+       return search(arr,n-1, 0);
        }
     }
     

@@ -5,33 +5,33 @@ public class Remove_Dul {
     private Node taile;
     private int size;
     public static void main(String[] args) {
-       Remove_Dul rem= new Remove_Dul();
-       rem.inserLast(1);
-       rem.inserLast(1);
-       rem.inserLast(1);
-       rem.inserLast(2);
-       rem.inserLast(4);
-       rem.inserLast(4);
-       rem.display();
-       rem.Sorted_linked();
-       rem.display();
-    //    Remove_Dul first= new Remove_Dul();
-    //    Remove_Dul last= new Remove_Dul();
-    // //    first.inserLast(1);
-    //    first.inserFirst(3);
-    //    first.inserFirst(5);
-    //    first.inserFirst(6);
+    //    Remove_Dul rem= new Remove_Dul();
+    //    rem.inserLast(1);
+    //    rem.inserLast(1);
+    //    rem.inserLast(1);
+    //    rem.inserLast(2);
+    //    rem.inserLast(4);
+    //    rem.inserLast(4);
+    //    rem.display();
+    //    rem.Sorted_linked();
+    //    rem.display();
+        Remove_Dul first= new Remove_Dul();
+        Remove_Dul last= new Remove_Dul();
+        first.inserLast(1);
+        first.inserFirst(3);
+        first.inserFirst(5);
+        first.inserFirst(6);
        
     
        
-    // //    last.inserLast(1);
-    //  last.inserFirst(1);
-    //  last.inserFirst(2);
-    //  last.inserFirst(3);
-     
+        last.inserLast(1);
+      last.inserFirst(1);
+      last.inserFirst(2);
+      last.inserFirst(3);
 
-        // Remove_Dul ans= Remove_Dul.merge(first, last);
-        // ans.display();
+
+         Remove_Dul ans= Remove_Dul.merge(first, last);
+         ans.display();
     }
      
     public void display(){

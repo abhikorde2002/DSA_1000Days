@@ -14,7 +14,7 @@ public class Mai {
         // s.inserLast(6);
         // s.insert(4, 0);
         // s.DeleteFirst();
-        s.Display();
+     //   s.Display();
 System.out.println();
         Inserting_Node  str= new Inserting_Node();
         str.inserFirst(2);
@@ -24,7 +24,8 @@ System.out.println();
         str.inserFirst(20);
         //str.delet(2);
         str.display();
-        str.delet(2);
+        str.DeleteFirst();
+    //    str.delet(2);
         str.display();
       //      str.inserLast(21);
       //      str.insert(44, 2);

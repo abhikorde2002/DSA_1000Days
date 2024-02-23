@@ -12,16 +12,17 @@ public class Main {
         dd.insetlast(24);
         dd.Display();
         
-        dd.insert(7,6);
-        System.out.println("Delete last:-");
-         dd.DeleteLast();
-         dd.Display();
+      //  dd.insert(5,6);
+        //dd.Display();
+         System.out.println("Delete last:-");
+          dd.DeleteLast();
+          dd.Display();
          
-         dd.DeleteFirst();
-        dd.Display();
+        //  dd.DeleteFirst();
+        // dd.Display();
 
-        dd.DeleteLast();
-        dd.Display();
+        // dd.DeleteLast();
+        // dd.Display();
 }
     
 
