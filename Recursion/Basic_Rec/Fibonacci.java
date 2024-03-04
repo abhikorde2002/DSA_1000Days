@@ -7,6 +7,7 @@ public class Fibonacci {
         Print(4);
         System.out.println(fibo(4));
         System.out.println(Arrays.toString(Series(5)));
+        System.out.println(Fibo(10));
     }
 
     static void Print(int a){
@@ -22,6 +23,16 @@ public class Fibonacci {
         a--;
         }
         System.out.println(num);
+    }
+
+    static int Fibo(int n){
+        if(n==10){
+            return n;
+        }
+        int a=Fibo(n+1)+Fibo(n+2);
+      
+        
+        return a;
     }
 
     static int fibo(int n){

@@ -8,6 +8,7 @@ public class Missing_Number {
         System.out.println(missingNumber(arr));
         System.out.println(Search(arr));
     }
+    
    
     public static int missingNumber(int[] arr) {
         Arrays.sort(arr);

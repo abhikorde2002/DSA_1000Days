@@ -28,7 +28,7 @@ public class DIff_K {
         }
         j++;
        }
-       System.out.println(cou);
+      // System.out.println(cou);
       
     //    System.out.println(Arrays.toString(arr));
     //    while(i<arr.length-1){
@@ -52,6 +52,6 @@ public class DIff_K {
                 cou++;
             }
         }
-        System.out.println(cou);
+      //  System.out.println(cou);
     }
 }

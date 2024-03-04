@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Palindrom {
     public static void main(String[] args) {
         Pali("abba");
+        String s="HTTP/1.1 200";
+        if(s.contains("HTTP/1.1 200")){
+
+        }
         Scanner sc= new Scanner(System.in);
         String str=sc.nextLine();
     }
