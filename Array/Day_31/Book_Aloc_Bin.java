@@ -11,6 +11,8 @@ public class Book_Aloc_Bin {
          int m = 2;
          int ans = findPages(arr, n, m);
          System.out.println("The answer is: " + ans);
+         int arr1[]={10,20,30,40};
+         System.out.println(Allo(arr1, n, m));
         }
 
      public static int countStudents(ArrayList<Integer> arr, int pages) {
@@ -49,5 +51,42 @@ public class Book_Aloc_Bin {
             }
         }
         return low;
+    }
+
+    public static int Allo(int arr[],int n,int m){
+        if(m>n){return -1;}
+        int low= Integer.MIN_VALUE;
+        int high=0;
+        for(int i=0;i<arr.length;i++){
+         low=Math.max(low, arr[i]);
+         high+=arr[i]; 
+        } 
+
+        while (low<=high) {
+            int mid=low+ (high-low)/2;
+            int ans=posible( arr, mid);
+            if(ans>m){
+                low=mid+1;
+            }
+            else{
+                high=mid-1;
+            }
+        }
+
+        return low;
+    }
+    static int posible(int arr[],int mid){
+           int total=0;
+           int ans=1;
+           for(int i=0;i<arr.length;i++){
+             if( total+arr[i]<=mid){
+                total+=arr[i];
+             }
+             else{
+                ans++;
+                total=arr[i];
+             }
+           }
+           return ans;
     }
 }
