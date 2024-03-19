@@ -4,21 +4,12 @@ import java.util.ArrayList;
 
 public class Subseq_String {
     public static void main(String[] args) {
-       // Subset("abc", "");
-        Ret("", 3,3);
+        Subset("abc", "");
       // Ascii("abc", "");
         //System.out.println(SubsetS("abc", ""));
     }
-    static void Ret(String p,int n,int i){
-        if(n==1 || i==1){
-            System.out.print(p);
-            return;
-        }
-        Ret(p+'(', n-1,i);
-        Ret(p+')', n,i-1);
-        System.out.println();
-    }
    
+
     static void Subset(String s,String p){
         if(s.isEmpty()){
             System.out.println(p);

@@ -28,9 +28,9 @@ System.out.println();
     //    str.delet(2);
         str.display();
       //      str.inserLast(21);
-      //      str.insert(44, 2);
+            str.insert(44, 2);
         
-      //   str.display();
+         str.display();
       //   str.DeleteFirst();
         
       // str.find(44);

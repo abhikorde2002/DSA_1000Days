@@ -7,8 +7,14 @@ import java.util.Set;
 
 public class Sub_array {
     public static void main(String[] args) {
-       int arr[]={1,2,3};
-       System.out.println(subset(arr));
+       int arr[]={1,2,2};
+       
+        List< Integer> s= new ArrayList<>();
+       System.out.println( subset(arr));
+        // for(List<Integer> a:subset(arr)){
+        //       s.addAll(a);
+        // }
+        // System.out.println(s);
     }
 
     public static List<List<Integer>> subset(int[] nums) {
@@ -18,7 +24,7 @@ public class Sub_array {
         ArrayList<Integer> subset = new ArrayList<>(); // initialize the subset list
 
         helper(nums, 0, subset, ans); // call the recursive helper function with initial values
-
+       
         return ans; // return the answer list
     }
 

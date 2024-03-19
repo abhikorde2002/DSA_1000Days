@@ -58,7 +58,7 @@ public class Stck {
         s.push(-3);
  
         System.out.println(
-            "Stack elements before sorting: ");
+            "Stack elements before sorting: " + s);
        System.out.println(printStack(s));
  
         sortStack(s);
