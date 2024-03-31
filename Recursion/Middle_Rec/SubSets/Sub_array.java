@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class Sub_array {
     public static void main(String[] args) {
-       int arr[]={1,2,2};
+       int arr[]={10,5,2,6};
        
         List< Integer> s= new ArrayList<>();
        System.out.println( subset(arr));

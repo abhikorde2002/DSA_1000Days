@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Subset_Two {
     public static void main(String[] args) {
-        int arr[]={1,2,2};
+        int arr[]={10,5,2,6};
       //  System.out.println(subsets(arr));
         System.out.println(subsetsWithDup(arr));
     }
