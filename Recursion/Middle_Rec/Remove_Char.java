@@ -2,7 +2,7 @@ package Recursion.Middle_Rec;
 
 public class Remove_Char {
     public static void main(String[] args) {
-        String s="ABCDappleA";
+        String s="appleA";
         char ch= 'A';
         //System.out.println(Remove(s, ch));
         Removes("", s);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Subseq_String {
     public static void main(String[] args) {
-        Subset("abc", "");
+        Subset("3124", "");
       // Ascii("abc", "");
         //System.out.println(SubsetS("abc", ""));
     }
