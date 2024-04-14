@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Subseq_String {
     public static void main(String[] args) {
-        Subset("3124", "");
+     //   Subset("3124", "");
       // Ascii("abc", "");
-        //System.out.println(SubsetS("abc", ""));
+        System.out.println(SubsetS("abc", ""));
     }
    
 
@@ -16,8 +16,9 @@ public class Subseq_String {
             return;
         }
         char ch= s.charAt(0);
-        Subset(s.substring(1), p+ch);
+       
         Subset(s.substring(1), p);
+        Subset(s.substring(1), p+ch);
 
         
     }

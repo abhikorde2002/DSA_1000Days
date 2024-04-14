@@ -7,10 +7,10 @@ import java.util.Set;
 
 public class Sub_array {
     public static void main(String[] args) {
-       int arr[]={10,5,2,6};
+       int arr[]={1,2,3};
        
         List< Integer> s= new ArrayList<>();
-       System.out.println( subset(arr));
+       System.out.println( subsets(arr));
         // for(List<Integer> a:subset(arr)){
         //       s.addAll(a);
         // }
@@ -59,7 +59,10 @@ public class Sub_array {
            for(int j=start;j<n;j++){
                List<Integer> s= new ArrayList<>(out.get(j));
                s.add(arr[i]);
-               out.add(s);
+              System.out.println(arr[i]);
+              System.out.println(s);
+             out.add(s);
+             
            }
        }
        return out;

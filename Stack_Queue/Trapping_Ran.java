@@ -1,11 +1,30 @@
 package Stack_Queue;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class Trapping_Ran {
     public static void main(String[] args) {
         int arr[]={0,1,0,2,1,0,1,3,2,1,2,1};
         System.out.println(trap(arr));
+    }
+    
+      public int traping(int[] arr) {
+         Stack<Integer> s= new Stack<>();
+         int curr=0;
+         int wat=0;
+         
+         while(curr<arr.length){
+            while(!s.isEmpty() && arr[s.peek()]<arr[curr]){
+                int top=s.pop();
+                if(s.isEmpty())break;
+            int dis=curr-s.peek()-1;
+            int mul= dis* (Math.min(arr[curr], arr[s.peek()])-arr[top]);  
+            wat+=mul;         
+         }
+         s.push(curr++);
+         }
+         return wat;
     }
 
     public static int trap(int[] num) {

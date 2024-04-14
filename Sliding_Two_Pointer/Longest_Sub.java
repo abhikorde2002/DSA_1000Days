@@ -21,10 +21,9 @@ public class Longest_Sub {
         int len = 0;
         while (right < n) {
             if (mpp.containsKey(s.charAt(right))) left = Math.max(mpp.get(s.charAt(right)) + 1, left);
-            System.out.println(left);
-           System.out.println(mpp);
+        
             mpp.put(s.charAt(right), right);
-          System.out.println(mpp);
+       
             len = Math.max(len, right - left + 1);
             right++;
         }
