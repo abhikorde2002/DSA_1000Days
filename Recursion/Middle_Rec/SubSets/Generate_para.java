@@ -6,9 +6,9 @@ import java.util.List;
 public class Generate_para {
     
     public static void main(String[] args) {
-        
+        System.out.println(generateParenthesis(3));
     }
-    public List<String> generateParenthesis(int n) {
+    public static  List<String> generateParenthesis(int n) {
         List<String> s=new ArrayList<>();
         Ret(s,0,0,"",n);
         return s;

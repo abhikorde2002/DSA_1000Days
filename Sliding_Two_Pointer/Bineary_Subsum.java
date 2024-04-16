@@ -2,8 +2,8 @@ package Sliding_Two_Pointer;
 
 public class Bineary_Subsum {
     public static void main(String[] args) {
-        int arr[]={1,0,1,0,1};
-        System.out.println(numSubarraysWithSum(arr, 2));
+        int arr[]={0,0,0,1,0,0,1,0,0,0};
+        System.out.println(MyAns(arr, 2));
     }
 
     public static int numSubarraysWithSum(int[] arr, int g) {
@@ -26,7 +26,7 @@ public class Bineary_Subsum {
          }
          return cou;
      }
-     public int MyAns(int[] arr, int g) {
+     public static int MyAns(int[] arr, int g) {
         int cou=0,sum=0,left=0,right=0,tem=0;
          while(right<arr.length){
              sum+=arr[right];

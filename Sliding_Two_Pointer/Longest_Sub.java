@@ -6,10 +6,11 @@ import java.util.Set;
 
 public class Longest_Sub {
     public static void main(String[] args) {
-        String s="pwwkew";
+        String s="bbbbb";
        // System.out.println(longest_Sub(s));
    //    System.out.println(ans(s));
-   System.out.println(solve(s));
+   //System.out.println(solve(s));
+   System.out.println(Logic(s));
     }
 
     //Sliding Windo
@@ -29,7 +30,18 @@ public class Longest_Sub {
         }
         return len;
     }
-
+    static int Logic(String s){
+        int max=0;
+        Set<Character> str= new HashSet<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (str.contains(s.charAt(i))) {
+                str.clear();
+            }
+            str.add(s.charAt(i));
+            max=Math.max(max, str.size());
+        }
+        return max;
+    }
     //Two pointer
     static int longest_Sub(String s){
        int max=Integer.MIN_VALUE;

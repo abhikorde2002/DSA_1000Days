@@ -23,9 +23,9 @@ public class Max_Consicutiveone {
               }
               left++;  
              }
-             else if(zero<=k){
+          
              max=Math.max(max, right-left+1);
-             }
+             
              right++;
         }
         return max;
