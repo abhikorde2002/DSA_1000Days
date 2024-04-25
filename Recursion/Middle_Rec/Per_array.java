@@ -20,14 +20,16 @@ public class Per_array {
         if (start == nums.length - 1) { // Check if the current index is at the last position
             List<Integer> permutation = new ArrayList<>(); // Create a new list for the permutation
             for (int num : nums) {
-                permutation.add(num); // Add each element of the array to the permutation list
+                System.out.println(num);
+               System.out.println( permutation.add(num));// Add each element of the array to the permutation list
             }
             result.add(permutation); // Add the permutation list to the result list
         } else {
-            for (int i = start; i < nums.length; i++) { // Loop through the remaining elements
-                swap(nums, start, i); // Swap the current element with the element at index i
-                backtrack(nums, start + 1, result); // Recursively call backtrack with the next index
-                swap(nums, start, i); // Swap the elements back to their original positions
+            for (int i = start; i < nums.length; i++) { 
+                System.out.println(start);
+                swap(nums, start, i); 
+                backtrack(nums, start + 1, result);
+                swap(nums, start, i); 
             }
         }
     }
@@ -37,5 +39,8 @@ public class Per_array {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
+
+        System.out.println(nums[i]);
+        System.out.println(nums[j]);
     }
 }

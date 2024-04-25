@@ -1,13 +1,42 @@
 package Recursion.Middle_Rec;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Permutation {
     public static void main(String[] args) {
     //     permutations("", "abc");
     //     System.out.println();
-       System.out.println(  permutationsList("", "123"));
+  //  permutations("", "123");
+    int arr[]={1,2,3};
+    System.out.println(Print(arr));
    // System.out.println(permutationsCount("", "abc"));
+    }
+
+    static List<List<Integer>> Print(int arr[]){
+        List<List<Integer>> ans= new ArrayList<>();
+      
+          permutarray( arr, ans, new ArrayList<>());
+        return ans;  
+    }
+
+    static void permutarray(int arr[],List<List<Integer>> ans, List<Integer> per){
+        if(per.size()==arr.length){
+            ans.add(new ArrayList<>(per));
+            return;
+        }
+
+        for (int i : arr) {
+            if (per.contains(i)) 
+                continue;
+            
+            per.add(i);
+
+            permutarray( arr, ans, per);
+           
+           per.remove(per.size()-1);
+        }
+      
     }
 
     static void permutations(String p, String up) {

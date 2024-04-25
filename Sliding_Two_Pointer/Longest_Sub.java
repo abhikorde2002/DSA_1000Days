@@ -9,8 +9,8 @@ public class Longest_Sub {
         String s="bbbbb";
        // System.out.println(longest_Sub(s));
    //    System.out.println(ans(s));
-   //System.out.println(solve(s));
-   System.out.println(Logic(s));
+   System.out.println(solve(s));
+ //  System.out.println(Logic(s));
     }
 
     //Sliding Windo
@@ -24,8 +24,9 @@ public class Longest_Sub {
             if (mpp.containsKey(s.charAt(right))) left = Math.max(mpp.get(s.charAt(right)) + 1, left);
         
             mpp.put(s.charAt(right), right);
-       
-            len = Math.max(len, right - left + 1);
+                len= Math.max(len, right - left + 1);     
+            
+          
             right++;
         }
         return len;

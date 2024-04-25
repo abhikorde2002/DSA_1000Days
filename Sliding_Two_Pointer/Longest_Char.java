@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Longest_Char {
    public static void main(String[] args) {
-    String s= "aaabbccd";
+    String s= "12123";
     System.out.println(characterReplacement(s, 2));
    }
    
@@ -12,6 +12,7 @@ public class Longest_Char {
     int left=0,right=0;
     int max=0;
     int maxof=0;
+    int sum=0;
     HashMap<Character,Integer> str= new HashMap<>();
     while(right<s.length()){
       
@@ -21,9 +22,9 @@ public class Longest_Char {
          str.put(s.charAt(left),str.get(s.charAt(left))-1);
          left++;
       }
-      if(right-left+1-maxof<=k){
+    
         max=Math.max(max,right-left+1);  
-     }
+     
      right++;
     }
     return max; 
