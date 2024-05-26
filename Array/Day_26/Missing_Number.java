@@ -39,7 +39,7 @@ public class Missing_Number {
                 i++;
             }
            }
-        for(int ind=0;ind<arr.length;ind++){
+        for(int ind=1;ind<arr.length;ind++){
             if(arr[ind]!=ind){
                 return ind;
             }
