@@ -20,7 +20,7 @@ public class Repace_Element {
               continue;
            }
            else{
-            map.put(num[i], ind++);
+           map.put(num[i], ind++);
            }
        }
        int a[]= new int[arr.length];
