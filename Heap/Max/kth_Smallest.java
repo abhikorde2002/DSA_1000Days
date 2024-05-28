@@ -17,7 +17,7 @@ public class kth_Smallest {
     }
 
     static int kth_Smallest_Elemet(int arr[],int k){
-        PriorityQueue<Integer> max= new PriorityQueue<>();
+        PriorityQueue<Integer> max= new PriorityQueue<>((a,b)-> b-a);
         for (int i = 0; i < arr.length; i++) {
             max.offer(arr[i]);
             if (max.size()>k) {

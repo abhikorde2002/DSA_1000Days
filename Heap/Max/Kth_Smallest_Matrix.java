@@ -17,7 +17,6 @@ public class Kth_Smallest_Matrix {
             }
          }
         int cou=0;
-        System.out.println(map);
         while (!map.isEmpty()) {
             int val=map.poll();
             cou++;
