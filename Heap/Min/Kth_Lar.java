@@ -10,8 +10,8 @@ public class Kth_Lar {
         System.out.println(kth_largest(arr, 3));
         System.out.println(Arrays.toString(arr));
     //    System.out.println(Arrays.toString(simple(arr)));
-       String s="ABCDEF";
-       System.out.println(KTh_Largest(s, 3));
+    //    String s="ABCDEF";
+    //    System.out.println(KTh_Largest(s, 3));
     }
 
     static Character KTh_Largest(String s,int k){
