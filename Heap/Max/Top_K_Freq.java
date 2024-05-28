@@ -17,7 +17,7 @@ import java.util.Set;
  */
 public class Top_K_Freq {
     public static void main(String[] args) {
-       int arr[]={1,1,1,2,2,3};
+       int arr[]={3, 1, 4, 4, 5, 2, 6, 1};
        System.out.println(Arrays.toString(topKFrequents(arr, 2)));
     }
     public static int[] topKFrequents(int[] nums, int k) {

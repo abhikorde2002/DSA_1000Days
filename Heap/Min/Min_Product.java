@@ -14,16 +14,12 @@ public class Min_Product {
        PriorityQueue<Integer>  map= new PriorityQueue<Integer>();
        for (int i = 0; i < arr.length; i++) {
             map.offer(arr[i]);
-            // if(map.size()>k)map.poll();
-
        }
        int ans=1;
        while (k--!=0) {
          ans*=map.poll();
        }
-    //    int v=map.poll();
-    //    int x=map.poll();
-    //    System.out.println(v + "*"+x);
+   
        return ans;
        
     }
