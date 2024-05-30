@@ -1,26 +1,26 @@
-package Heap.Max;
+package Heap.Min;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.Set;
 
-/*
- You gotta find 2 most frequent elements in list. 
- It does not mean to return elements with occurrence/frequency of 2 or more. 
- So if you count occurrence of each element, then sort it by highest to lowest occurrence, your answer will be 
- top 2 elements in that list.
-  In this case both element [1,2] have occurred once and we need to return top 2 elements with 
-  highest occurrence so answer is [1,2]. If that makes sense!
- */
-public class Top_K_Freq {
+public class Freq_Sort {
     public static void main(String[] args) {
-       int arr[]={3, 1, 4, 4, 5, 2, 6, 1};
-       System.out.println(Arrays.toString(topKFrequents(arr, 2)));
+        int arr[]={1,1,2,2,2,3,3,4};
+        System.out.println(Arrays.toString(topKFrequents(arr, 0)));
+     //  System.out.println(Arrays.toString(swap(arr)));
+
     }
-    public static int[] topKFrequents(int[] nums, int k) {
+    public static int[] swap(int arr[]){
+        for (int i = 0; i <= arr.length/2; i++) {
+            int tem=arr[i];
+           arr[i]= arr[arr.length-1-i];
+           arr[arr.length-1-i]=tem;
+        }
+        return arr;
+    }
+     public static int[] topKFrequents(int[] nums, int k) {
         // Step 1: Count the frequency of each element
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int num : nums) {
@@ -34,10 +34,7 @@ public class Top_K_Freq {
 
         // Step 3: Maintain the size of the heap
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
-            minHeap.offer(entry);
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
+            minHeap.offer(entry);        
         }
 
         // Step 4: Extract the results from the heap
@@ -46,7 +43,7 @@ public class Top_K_Freq {
         while (!minHeap.isEmpty()) {
             result[index++] = minHeap.poll().getKey();
         }
-
+        swap(result);
         return result;
     }
 }

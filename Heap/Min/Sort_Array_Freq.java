@@ -1,26 +1,20 @@
-package Heap.Max;
+package Heap.Min;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.Set;
 
-/*
- You gotta find 2 most frequent elements in list. 
- It does not mean to return elements with occurrence/frequency of 2 or more. 
- So if you count occurrence of each element, then sort it by highest to lowest occurrence, your answer will be 
- top 2 elements in that list.
-  In this case both element [1,2] have occurred once and we need to return top 2 elements with 
-  highest occurrence so answer is [1,2]. If that makes sense!
- */
-public class Top_K_Freq {
+//Given an array of integers nums, sort the array in increasing order based on the frequency of the values. 
+//If multiple values have the same frequency, sort them in decreasing order.
+
+
+public class Sort_Array_Freq {
     public static void main(String[] args) {
-       int arr[]={3, 1, 4, 4, 5, 2, 6, 1};
-       System.out.println(Arrays.toString(topKFrequents(arr, 2)));
+        int arr[]={-1,1,-6,4,5,-6,1,4,1};
+        System.out.println(Arrays.toString(topKFrequents(arr, 0)));
     }
-    public static int[] topKFrequents(int[] nums, int k) {
+     public static int[] topKFrequents(int[] nums, int k) {
         // Step 1: Count the frequency of each element
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int num : nums) {
@@ -34,19 +28,24 @@ public class Top_K_Freq {
 
         // Step 3: Maintain the size of the heap
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
-            minHeap.offer(entry);
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
+            minHeap.offer(entry);        
         }
 
         // Step 4: Extract the results from the heap
-        int[] result = new int[minHeap.size()];
+        int[] result = new int[nums.length];
         int index = 0;
         while (!minHeap.isEmpty()) {
-            result[index++] = minHeap.poll().getKey();
+            int val= minHeap.poll().getKey();
+            while (frequencyMap.containsKey(val)) {
+                frequencyMap.put(val, frequencyMap.get(val) - 1);
+                result[index++]=val;
+                if (frequencyMap.get(val) == 0) {
+                    frequencyMap.remove(val);
+                }
+            }
         }
-
+        
         return result;
     }
+
 }

@@ -8,10 +8,30 @@ import java.util.PriorityQueue;
 
 public class Kth_Closest {
     public static void main(String[] args) {
-        int arr[]={5,6,7,8,9,10};
-        System.out.println(findClosestElements(arr, 4, 3));
+        int arr[]={1,2,3,4,5};
+       // System.out.println(findClosestElements(arr, 4, 3));
+        System.out.println(findClosest(arr,4, 3));
     }
-
+    public static List<Integer> findClosest(int[] arr, int k, int x) {
+        PriorityQueue<Integer> s= new PriorityQueue<>();
+        for(int i=0;i<arr.length;i++){
+             if(k>0){
+                 s.offer(arr[i]);
+                 k--;
+             }
+             else if(Math.abs(s.peek()-x)>Math.abs(arr[i]-x)){
+                  s.poll();
+                  s.offer(arr[i]);
+             }
+         }
+ 
+         List<Integer> str= new ArrayList<>();
+          while(!s.isEmpty()){
+             str.add(s.poll());
+          }
+ 
+         return str;
+     }
     public static List<Integer> findClosestElements(int[] arr, int k, int x) {
 
         // The sliding window is between 'mid' and 'mid' + k.
