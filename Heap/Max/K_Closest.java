@@ -7,7 +7,7 @@ public class K_Closest {
         
     }
 
-    static int[][] kClosest(int[][] arr, int k) {
-        PriorityQueue<Integer , <Integer,Integer>> map= new PriorityQueue<>();
-    }
+    // static int[][] kClosest(int[][] arr, int k) {
+    //     PriorityQueue<Integer , <Integer,Integer>> map= new PriorityQueue<>();
+    // }
 }
