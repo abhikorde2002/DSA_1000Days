@@ -1,4 +1,4 @@
-package Sliding_Two_Pointer.Rev;
+package Sliding_Two_Pointer.Revegen;
 
 import java.util.HashMap;
 import java.util.Map;

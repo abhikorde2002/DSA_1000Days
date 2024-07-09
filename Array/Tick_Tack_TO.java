@@ -42,26 +42,17 @@ public class Tick_Tack_TO {
             if(ch[i][0]==c && ch[i][1]==c && ch[i][2]==c){
                 return true;
             }
-            if(ch[0][i]==c && ch[0][i+1]==c && ch[0][i+2]==c){
-                return true;
-            }
-           if(ch[0][0]==c && ch[1][1]==c && ch[2][2]==c){
-            return true;
-           }
-           if(ch[0][2]==c && ch[1][1]==c && ch[2][0]==c){
-            return true;
-           }
          }  
-        //  for (int i = 0; i < ch[0].length; i++) {
-        //     if(ch[0][i]==c && ch[1][i]==c && ch[2][i]==c){
-        //         return true;
-        //     }}
-        //     if(ch[0][0]==c && ch[1][1]==c && ch[2][2]==c){
-        //             return true;
-        //            }
-        //            if(ch[0][2]==c && ch[1][1]==c && ch[2][0]==c){
-        //                 return true;
-        //                }     
+         for (int i = 0; i < ch[0].length; i++) {
+            if(ch[0][i]==c && ch[1][i]==c && ch[2][i]==c){
+                return true;
+            }}
+            if(ch[0][0]==c && ch[1][1]==c && ch[2][2]==c){
+                    return true;
+                   }
+                   if(ch[0][2]==c && ch[1][1]==c && ch[2][0]==c){
+                        return true;
+                       }     
                        
                        return false;
     }

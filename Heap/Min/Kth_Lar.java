@@ -7,11 +7,11 @@ public class Kth_Lar {
     PriorityQueue <Character> map= new PriorityQueue<Character>();
     public static void main(String[] args) {
         int arr[]={11, 3, 2, 1, 15, 5, 4, 45, 88, 96, 50, 45};
-        System.out.println(kth_largest(arr, 3));
+        System.out.println(kth_largest(arr, 1));
         System.out.println(Arrays.toString(arr));
     //    System.out.println(Arrays.toString(simple(arr)));
     //    String s="ABCDEF";
-    //    System.out.println(KTh_Largest(s, 3));
+       //System.out.println(KTh_Largest(s, 3));
     }
 
     static Character KTh_Largest(String s,int k){
