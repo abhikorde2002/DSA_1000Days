@@ -8,8 +8,8 @@ public class Replace_Element {
     public static void main(String[] args) {
         int arr[]={20, 15, 26, 2, 98, 6};
         int sum[]=Arrays.copyOf(arr, arr.length);
-        Arrays.sort(sum);
-         System.out.println(Arrays.toString(sum));
+         Arrays.sort(sum);
+        //  System.out.println(Arrays.toString(sum));
         System.out.println(Arrays.toString(replaceWithRank(arr, sum, arr.length)));
     }
     static int[] replaceWithRank(int arr[], int N) {
