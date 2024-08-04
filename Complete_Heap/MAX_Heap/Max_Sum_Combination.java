@@ -8,19 +8,7 @@ public class Max_Sum_Combination {
         int arr[]={1, 4, 2, 3};
         int num[]={2, 5, 1, 6};
         System.out.println(Arrays.toString(combination_Sum(arr, num, 4)));
-        String s="";
-        String str[]={"null", "null", "null", "null", "null", "null", "null"," BG 2326 HF"};
-        for (int i=0;i<str.length;i++) {
-           String words=str[i];
-           if(!words.equals("null")){
-            for(int j=0;j<words.length();j++){
-               if (words.charAt(j)!=' ') {
-                s+=words.charAt(j);
-               }
-            }
-           }
-        }
-        System.out.println(s);
+       
     }
 
     static int[] combination_Sum(int arr[],int num[],int k){
