@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class K_THLargest {
     public static void main(String[] args) {
         int arr[]={2,12,7,10,90,15};
-        System.out.println(findKthLargest(arr, 1));
+        System.out.println(findKthLargest(arr, 4));
        System.out.println(Arrays.toString(findKth(arr, arr.length)));
     }
 
@@ -16,6 +16,7 @@ public class K_THLargest {
        for(int i=0;i<arr.length;i++)s.add(arr[i]);
        int cou=k-1;
        while(cou!=0){
+        System.out.println(s.peek());
         s.poll();
         cou--;
        }

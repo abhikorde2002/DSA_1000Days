@@ -15,6 +15,7 @@ public class K_TH_Smallest {
         for(int i=l;i<=r;i++){
             s.offer(arr[i]);
             if(s.size()>k){
+                System.out.println(s.peek());
                 s.poll();
             }
         }

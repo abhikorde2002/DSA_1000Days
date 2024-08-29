@@ -30,7 +30,7 @@ ArrayList<Integer> list= new ArrayList<>();
         
     }
 
-    public ListNode mergeKLists(ListNode[] lists) {
+    public static ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> s= new PriorityQueue<>((a,b) -> a.val-b.val);
         for(int i=0;i<lists.length;i++){
         

@@ -7,6 +7,18 @@ public class Shotest_Job {
         int arr[]={1,2,3,4};
         System.out.println(shotest(arr));
     }
+    static int solve(int arr[] ) {
+           Arrays.sort(arr);
+            int prev=0;
+            int sum=0;
+            for (int i = 0; i < arr.length; i++) {
+               sum+=prev;
+              
+               prev+=arr[i];
+            }
+           
+            return sum/arr.length;
+      }
 
     static int shotest(int arr[]){
         Arrays.sort(arr);
