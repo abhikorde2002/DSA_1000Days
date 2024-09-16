@@ -17,7 +17,7 @@ public class Find_Subseq_k {
       for(int i=0;i<arr.length;i++){
            map.offer(new int[]{arr[i],i});
       }
-      
+   
       List<int[]> list= new ArrayList<>();
       while(k-- !=0){
         list.add(map.poll());

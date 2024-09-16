@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Non_overlaping_interval {
     public static void main(String[] args) {
-        int arr[][]={{1,2},{2,3},{3,4},{1,3}};
+        int arr[][]={{1,2},{1,2},{1,2}};
         System.out.println(maxMeetings(arr.length, arr));
     }
 
@@ -40,3 +40,16 @@ public class Non_overlaping_interval {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

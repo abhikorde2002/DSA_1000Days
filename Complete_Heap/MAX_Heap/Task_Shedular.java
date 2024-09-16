@@ -22,6 +22,7 @@ public class Task_Shedular {
         PriorityQueue<Integer> pq= new PriorityQueue<>((a,b) -> b-a);
 
         pq.addAll(map.values());
+        System.out.println(pq);
         int time=0;
         while (pq.size()>0) {
             List<Integer> list= new ArrayList<>();
