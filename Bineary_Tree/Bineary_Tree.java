@@ -2,8 +2,19 @@ package Bineary_Tree;
 
 import java.util.Scanner;
 
+class Hello {
+  public void hell(){
+      System.out.println("fdg");
+      return;
+  }
+}
 public class Bineary_Tree {
     public static void main(String[] args) {
+      for (int i = 1; i < 11; i++) {
+        System.out.print(+i);
+      }
+       long l= 33342;
+       System.out.println(l);
         Scanner sc= new Scanner(System.in);
         Bineary_Tree tree= new Bineary_Tree();
         tree.populate(sc);
