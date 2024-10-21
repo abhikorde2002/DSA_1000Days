@@ -2,18 +2,10 @@ package Complet_Binary;
 import java.util.*;;
 public class Inorder {
     public static void main(String[] args) {
-        int v=10;
-        if(v==10){
-System.out.println();
-        }
-        else if(v==10){
-            System.out.println();
-        }
-        if (v==10) {
-            System.out.println("Hello");
-        }
+       
     }
-
+    // http://your.company.D.sutetalk.apinebute.com/wsd/2017_2_0/netsuite.wsdl
+    // http://websevices.netsuite.com/wsdl/v2017_2_0/netsuite
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> str= new ArrayList<>();
           if(root==null) return str;
