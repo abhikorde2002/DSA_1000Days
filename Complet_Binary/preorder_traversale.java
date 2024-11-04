@@ -13,7 +13,27 @@ public class preorder_traversale {
         tree.right.right= new TreeNode(5);
         tree.left.left= new TreeNode(4);
         tree.left.right= new TreeNode(5);
-        System.out.println(preorderTraversal(tree));
+     //   System.out.println(preorderTraversal(tree));
+        System.out.println(preOrder(tree));
+    }
+
+    static List<Integer> preOrder(TreeNode root){
+        List<Integer> str= new ArrayList<>();
+        List<List<Integer>> s = new ArrayList<>();
+        preTraversal(str,root,s);
+        System.out.println(s);
+        return str;
+    }
+
+    static void preTraversal(List<Integer> str,TreeNode root,List<List<Integer>> s){
+        if(root==null){ s.add(str);
+            System.out.println(s);
+         return;
+        }
+         
+        str.add(root.val);
+        preTraversal(str,root.left,s);
+        preTraversal(str,root.right,s);
     }
 
    public static List<Integer> preorderTraversal(TreeNode root) {

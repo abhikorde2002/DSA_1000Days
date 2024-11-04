@@ -9,6 +9,22 @@ public class Max_Path_Sum {
         tree.left.right= new TreeNode(5);
         System.out.println(maxPathSum(tree));
     }
+    static int maxPathSums(TreeNode root) {
+         int max[]=new int[1];
+         path_sum(root,max);
+         return max[0];
+    }
+    static int path_sum(TreeNode node,int max[]){
+        if (node==null) {
+            return 0;
+        }
+        int left= path_sum(node.left, max);
+        int right=path_sum(node.right, max);
+        max[0]= Math.max(max[0], left+right+node.val);
+        return node.val+Math.max(left,right);
+    }
+
+
 
     static int maxPathSum(TreeNode root) {
         int max[]= new int[1];
